@@ -7,8 +7,8 @@ const admin = require('../middleware/admin');
 
 router.get('/', async (req, res) => {
     const blogs = await Blog.find().sort({date: -1});
-    // res.send(blogs)
-    setTimeout(() => {res.send(blogs)}, 300)
+    res.send(blogs);
+    // setTimeout(() => {res.send(blogs)}, 300)
 });
 
 router.get('/:id', async (req, res) => {
@@ -20,8 +20,8 @@ router.get('/:id', async (req, res) => {
     blog._doc.lastBlog = lastBlog;
     blog._doc.nextBlog = nextBlog;
 
-    // res.send(blog)
-    setTimeout(() => {res.send(blog)}, 300)
+    res.send(blog);
+    // setTimeout(() => {res.send(blog)}, 300)
 });
 
 router.post('/', [auth, admin], async (req, res) => {
