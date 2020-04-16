@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
 const logger = require('./logger');
+const config = require('config');
 
 module.exports = function () {
-    mongoose.connect('mongodb://localhost/lyne', {
+    const url = config.get("db");
+    mongoose.connect(url, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true

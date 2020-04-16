@@ -234,3 +234,13 @@
     '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4423:15)',
   timestamp: '2020-04-16T14:27:16.511Z'
 }
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-16T16:53:21.526Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-16T16:53:21.541Z'
+}
