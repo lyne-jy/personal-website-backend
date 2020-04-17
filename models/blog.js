@@ -9,7 +9,7 @@ const blogSchema = new mongoose.Schema({
     },
     date: {
         type: Date,
-        default: new Date(+ new Date() + 8 * 3600 * 1000).toJSON()
+        default: () => Date.now() + 8*60*60*1000
     },
     genre: {
         type: String,

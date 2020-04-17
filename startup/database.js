@@ -4,6 +4,7 @@ const config = require('config');
 
 module.exports = function () {
     const url = config.get("db");
+    console.log(url);
     mongoose.connect(url, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
