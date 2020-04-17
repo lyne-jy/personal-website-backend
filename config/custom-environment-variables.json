@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "lyne_jwtPrivateKey"
+  "jwtPrivateKey": "lyne_jwtPrivateKey",
+  "db": "lyne_db"
 }

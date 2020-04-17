@@ -1,5 +1,5 @@
 {
   "name": "Express Backend",
-  "jwtPrivateKey": "notSecureKey",
-  "db": "mongodb+srv://vidlyuser:175401574@lyne-sujot.azure.mongodb.net/test?retryWrites=true&w=majority"
+  "jwtPrivateKey": "",
+  "db": ""
 }
