@@ -12,7 +12,7 @@ const commentSchema = mongoose.Schema({
     },
     date: {
         type: Date,
-        required: true
+        default: () => Date.now() + 8 * 60 * 60 * 1000
     }
 });
 

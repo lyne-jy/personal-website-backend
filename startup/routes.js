@@ -2,6 +2,8 @@ const express = require('express');
 const blogs = require('../routes/blogs');
 const users = require('../routes/users');
 const auth = require('../routes/auth');
+const message = require('../routes/message');
+const comments = require('../routes/comments');
 const error = require('../middleware/error');
 const cors = require('cors');
 
@@ -13,5 +15,7 @@ module.exports = function (app) {
     app.use('/api/blogs', blogs);
     app.use('/api/users', users);
     app.use('/api/auth', auth);
+    app.use('/api/message', message);
+    app.use('/api/comments', comments);
     app.use(error);
 };

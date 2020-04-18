@@ -314,3 +314,419 @@
   level: 'info',
   timestamp: '2020-04-17T02:25:47.547Z'
 }
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-17T03:09:06.266Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-17T03:09:06.275Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-17T07:34:19.618Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-17T07:34:19.638Z'
+}
+{
+  level: 'error',
+  message: 'e is not definede is not defined',
+  stack: 'ReferenceError: e is not defined\n' +
+    '    at /Users/lyne/node-course/express-demo/routes/blogs.js:60:14\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:97:5)',
+  timestamp: '2020-04-17T12:21:31.574Z'
+}
+{
+  level: 'error',
+  message: 'e is not definede is not defined',
+  stack: 'ReferenceError: e is not defined\n' +
+    '    at /Users/lyne/node-course/express-demo/routes/blogs.js:60:14\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:97:5)',
+  timestamp: '2020-04-18T06:57:17.052Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"blogs"',
+  kind: undefined,
+  value: 'blogs',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-18T07:07:28.978Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"blogs"',
+  kind: undefined,
+  value: 'blogs',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-18T07:07:32.979Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"blogs"',
+  kind: undefined,
+  value: 'blogs',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-18T07:07:42.579Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"blogs"',
+  kind: undefined,
+  value: 'blogs',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-18T07:07:53.237Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"blogs"',
+  kind: undefined,
+  value: 'blogs',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-18T07:07:54.591Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"blogs"',
+  kind: undefined,
+  value: 'blogs',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-18T07:07:56.189Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"blogs"',
+  kind: undefined,
+  value: 'blogs',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "blogs" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-18T07:08:26.601Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T07:20:07.350Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T07:20:07.364Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T07:34:03.480Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T07:34:03.490Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T07:36:07.986Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T07:36:08.002Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T07:37:55.363Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T07:37:55.373Z'
+}
+{
+  level: 'error',
+  message: 'e is not definede is not defined',
+  stack: 'ReferenceError: e is not defined\n' +
+    '    at /Users/lyne/node-course/express-demo/routes/blogs.js:60:14\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:97:5)',
+  timestamp: '2020-04-18T08:04:39.662Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T08:36:37.262Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T08:36:37.278Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T08:55:59.630Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T08:55:59.649Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T09:05:09.107Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T09:05:09.118Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T09:30:56.670Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T09:30:56.682Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T09:31:34.646Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T09:31:34.659Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T09:35:27.876Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T09:35:27.918Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T09:39:35.828Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T09:39:35.843Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T09:40:28.195Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T09:40:28.209Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T09:43:02.725Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T09:43:02.738Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T10:05:25.406Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T10:05:25.423Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T10:15:20.333Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T10:15:20.345Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T10:22:19.686Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T10:22:19.700Z'
+}

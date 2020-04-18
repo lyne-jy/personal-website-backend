@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Joi = require('joi');
 const {commentSchema} = require('./comment');
 
+
 const blogSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -9,12 +10,11 @@ const blogSchema = new mongoose.Schema({
     },
     date: {
         type: Date,
-        default: () => Date.now() + 8*60*60*1000
+        default: () => Date.now() + 8 * 60 * 60 * 1000
     },
     genre: {
         type: String,
-        required: true,
-        enum: ["coding", "music", "photography", "life"]
+        required: true
     },
     tags: {
         type: Array,

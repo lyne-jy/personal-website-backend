@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const {Blog, validateBlog} = require('../models/blog');
-const {Comment, validateComment} = require('../models/comment');
 const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
 
@@ -42,24 +41,6 @@ router.post('/', [auth, admin], async (req, res) => {
     res.send(result);
 });
 
-router.post('/:id', async (req, res) => {
-    const {error} = validateComment(req.body);
-    if (error) return res.status(400).send(error.details[0].message);
-
-    const blog = await Blog.findById(req.params.id);
-    const comment = new Comment({
-        username: req.body.username,
-        content: req.body.content,
-        date: req.body.date
-    });
-    blog.comments.push(comment);
-
-    await blog.save();
-    res.send(blog.comments);
-
-    res.send(e.message);
-});
-
 router.put('/:id', [auth, admin], async (req, res) => {
     const {error} = validateBlog(req.body);
     if (error) return res.status(400).send(error.details[0].message);
@@ -74,9 +55,6 @@ router.put('/:id', [auth, admin], async (req, res) => {
     }, {new: true});
     if (!result) return res.status(404).send("Not Found");
     res.send(result);
-
-    res.send(e.message);
-
 });
 
 router.delete('/:id', [auth, admin], async (req, res) => {

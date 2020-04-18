@@ -1,5 +1,5 @@
 {
   "name": "Express Backend",
   "jwtPrivateKey": "notSecureKey",
-  "db": "http://localhost:27017/lyne"
+  "db": "mongodb://localhost:27017/lyne"
 }
