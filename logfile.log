@@ -730,3 +730,13 @@
   level: 'info',
   timestamp: '2020-04-18T10:22:19.700Z'
 }
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T10:37:16.510Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T10:37:16.520Z'
+}

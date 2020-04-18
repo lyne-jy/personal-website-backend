@@ -4,7 +4,7 @@ const {Comment, validateComment} = require('../models/comment');
 const {Blog} = require('../models/blog');
 const limiter = require('../middleware/limit');
 
-router.post('/:id', async (req, res) => {
+router.post('/:id', limiter, async (req, res) => {
     const {error} = validateComment(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
