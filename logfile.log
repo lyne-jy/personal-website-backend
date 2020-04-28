@@ -740,3 +740,402 @@
   level: 'info',
   timestamp: '2020-04-18T10:37:16.520Z'
 }
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-18T14:08:07.779Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-18T14:08:07.791Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-19T03:51:21.325Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-19T03:51:21.336Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-20T11:53:19.119Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-20T11:53:19.139Z'
+}
+{
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n' +
+    '    "title": "相机杂谈",\n' +
+    '    "genre": "photography",\n' +
+    '    "tags": [\n' +
+    '      "camera"\n' +
+    '    ],\n' +
+    '    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor earum ipsam iure laboriosam nobis quam, quasi quia saepe sapiente. Accusamus est nisi quis? Cum dolor ipsa quibusdam vero voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit.",\n' +
+    '    "body": "由于疫情，一直在家里宅着。宅着也无聊，不如学点东西吧，于是学了一下Web全家桶HTML + CSS + JavaScript，也顺便学了一下Node和React。正好很久之前就想建一个自己的网站了，那就来实践一下～\n' +
+    '\n' +
+    '一顿搜索，发现目前搭建个人网站/博客的方案大概有这几类：\n' +
+    '\n' +
+    '+ 用现有的平台和社区\n' +
+    '\n' +
+    '  这应该是最简单的方法。Medium和国内的简书之类的网站可以提供一个漂亮而功能完备的个人博客。缺点就是：QQ空间它不香吗，QQ空间还能自定义摆件什么的......\n' +
+    '\n' +
+    '+ 用各种博客框架\n' +
+    '  例如WordPress, Ghost和Hexo等。这类框架的优点是可以方便地搭建博客，也有大量的模版可以使用。这里比较推荐Hexo，只需要模版 + Markdown，甚至不需要写多少代码就能搭一个博客网站。\n' +
+    '\n' +
+    '+ 啥都不用，自己搭\n' +
+    '  自己搭就比较自由了，可以使用自己喜欢的技术实现想要的功能和风格。缺点当然就是麻烦一点。\n' +
+    '\n' +
+    '最后还是决定不用博客框架，自己搭。~~原因当然是👴才学的React和Node不用血亏。~~那么就开始吧。\n' +
+    '\n' +
+    '这个网站主要用到的东西有：\n' +
+    '\n' +
+    '+ 前端\n' +
+    '  + React\n' +
+    '  + React Router Dom 实现路由\n' +
+    '  + Bootstrap 和 Reactstrap 一些基本组件与风格\n' +
+    '  + Axios 实现http请求\n' +
+    '  + React Markdown 实现Markdown格式的博客更新\n' +
+    '  + Sentry 实现日志\n' +
+    '  + 其余就是一些风格组件：React Typist, React Spinner, React Icons, React Toastify...\n' +
+    '+ 后端\n' +
+    '  + Node\n' +
+    '  + Express 包括两个middleware: express-async-errors, express-rate-limit\n' +
+    '  + Joi 格式检查\n' +
+    '  + Winston 日志\n' +
+    '  + Config 配置文件\n' +
+    '  + Cors 作用如其名\n' +
+    '  + Json Web Tokens 认证\n' +
+    '  + Bcrypt 加密，和上面一起实现注册和登录，不过目前还没在前端开放\n' +
+    '  + Mongoose 连接MongoDB\n' +
+    '+ 数据库\n' +
+    '  + MongoDB\n' +
+    '+ 部署\n' +
+    '  + Heroku + Atlas 纯白嫖，美汁汁儿～\n' +
+    '\n' +
+    '总的来说是一个很简单的应用，工具都选择简单的，轻量级的。状态管理也没有用到Redux，因为目前的话React的state就够用了。目前实现的功能有：\n' +
+    '\n' +
+    '+ 文章列表的类别和标签筛选\n' +
+    '+ 文章列表的分页\n' +
+    '+ 文章之间的切换\n' +
+    '+ Markdown格式文章更新\n' +
+    '+ 文章评论\n' +
+    '+ ”关于我“页面的留言\n' +
+    '\n' +
+    '接下来要做的：\n' +
+    '\n' +
+    '+ 预留了一个工具区，以后（大概）会慢慢更新一些小工具或者放一些自己的项目\n' +
+    '+ 写个后台页，就可以不用像现在这样用Postman写文章了......\n' +
+    '+ 部署到不用翻墙的平台上\n' +
+    '+ 等文章比较多了弄个搜索栏\n' +
+    '+ 想到再说\n' +
+    '\n' +
+    'UI基本都是自己写的，用到了一些Bootstrap的组件，都重写了CSS。 前前后后想了很多种方案，写CSS的时间甚至比写代码还长🤦‍♂️。最终还是决定黑白 + Serif字体，突出一个简(tou)洁(lan)。鉴于本人设计和审美能力有限，大家笑一笑就好。\n' +
+    '\n' +
+    '由于字体的原因，浏览的体验是**Mac > Windows > 移动端**。字体也是个大坑，后面会写篇帖讲讲字体的问题。移动端目前也只做了基本的适配，应该也不会进一步完善了。正好对手机APP比较感兴趣，后面可能会直接做一个APP。\n' +
+    '\n' +
+    '就这样了，如果有任何建议和意见可以直接评论或者在“关于我”页面联系我～"\n' +
+    '  }',
+  type: 'entity.parse.failed',
+  level: 'error',
+  message: 'Unexpected token \n' +
+    ' in JSON at position 489Unexpected token \n' +
+    ' in JSON at position 489',
+  stack: 'SyntaxError: Unexpected token \n' +
+    ' in JSON at position 489\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (/Users/lyne/node-course/express-demo/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+    '    at /Users/lyne/node-course/express-demo/node_modules/body-parser/lib/read.js:121:18\n' +
+    '    at invokeCallback (/Users/lyne/node-course/express-demo/node_modules/raw-body/index.js:224:16)\n' +
+    '    at done (/Users/lyne/node-course/express-demo/node_modules/raw-body/index.js:213:7)\n' +
+    '    at IncomingMessage.onEnd (/Users/lyne/node-course/express-demo/node_modules/raw-body/index.js:273:7)\n' +
+    '    at IncomingMessage.emit (events.js:323:22)\n' +
+    '    at endReadableNT (_stream_readable.js:1204:12)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:84:21)',
+  timestamp: '2020-04-20T15:02:02.142Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-20T16:18:06.269Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-20T16:18:06.283Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-20T16:30:44.449Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-20T16:30:44.463Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-27T04:34:01.737Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-27T04:34:01.751Z'
+}
+{
+  message: 'connect ECONNREFUSED 127.0.0.1:27017connect ECONNREFUSED 127.0.0.1:27017',
+  name: 'MongooseServerSelectionError',
+  reason: TopologyDescription {
+    type: 'Single',
+    setName: null,
+    maxSetVersion: null,
+    maxElectionId: null,
+    servers: Map {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        error: Error: connect ECONNREFUSED 127.0.0.1:27017
+            at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+          name: 'MongoNetworkError',
+          [Symbol(mongoErrorContextSymbol)]: {}
+        },
+        roundTripTime: -1,
+        lastUpdateTime: 1587962071644,
+        lastWriteDate: null,
+        opTime: null,
+        type: 'Unknown',
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: []
+      }
+    },
+    stale: false,
+    compatible: true,
+    compatibilityError: null,
+    logicalSessionTimeoutMinutes: null,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    commonWireVersion: null
+  },
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at new MongooseServerSelectionError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/serverSelection.js:22:11)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/connection.js:823:32)\n' +
+    '    at Mongoose.connect (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/index.js:333:15)\n' +
+    '    at module.exports (/Users/lyne/node-course/express-demo/startup/database.js:8:14)\n' +
+    '    at Object.<anonymous> (/Users/lyne/node-course/express-demo/index.js:8:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)\n' +
+    '    at internal/main/run_main_module.js:18:47',
+  timestamp: '2020-04-27T04:34:31.746Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-27T04:46:01.120Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-27T04:46:01.130Z'
+}
+{
+  message: 'connect ECONNREFUSED 127.0.0.1:27017connect ECONNREFUSED 127.0.0.1:27017',
+  name: 'MongooseServerSelectionError',
+  reason: TopologyDescription {
+    type: 'Single',
+    setName: null,
+    maxSetVersion: null,
+    maxElectionId: null,
+    servers: Map {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        error: Error: connect ECONNREFUSED 127.0.0.1:27017
+            at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+          name: 'MongoNetworkError',
+          [Symbol(mongoErrorContextSymbol)]: {}
+        },
+        roundTripTime: -1,
+        lastUpdateTime: 1587962790982,
+        lastWriteDate: null,
+        opTime: null,
+        type: 'Unknown',
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: []
+      }
+    },
+    stale: false,
+    compatible: true,
+    compatibilityError: null,
+    logicalSessionTimeoutMinutes: null,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    commonWireVersion: null
+  },
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at new MongooseServerSelectionError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/serverSelection.js:22:11)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/connection.js:823:32)\n' +
+    '    at Mongoose.connect (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/index.js:333:15)\n' +
+    '    at module.exports (/Users/lyne/node-course/express-demo/startup/database.js:8:14)\n' +
+    '    at Object.<anonymous> (/Users/lyne/node-course/express-demo/index.js:8:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)\n' +
+    '    at internal/main/run_main_module.js:18:47',
+  timestamp: '2020-04-27T04:46:31.131Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-27T04:47:03.224Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-27T04:47:03.237Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "login" at path "_id" for model "Blog"Cast to ObjectId failed for value "login" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"login"',
+  kind: undefined,
+  value: 'login',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "login" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-27T04:47:19.052Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-27T08:10:36.854Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-27T08:10:36.866Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-27T08:11:25.141Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-27T08:11:25.151Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2020-04-27T08:44:31.934Z'
+}
+{
+  message: 'Listening on port 4000',
+  level: 'info',
+  timestamp: '2020-04-27T08:44:31.950Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "l" at path "_id" for model "Blog"Cast to ObjectId failed for value "l" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"l"',
+  kind: undefined,
+  value: 'l',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "l" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-27T09:28:00.921Z'
+}
+{
+  message: 'Cast to ObjectId failed for value "123" at path "_id" for model "Blog"Cast to ObjectId failed for value "123" at path "_id" for model "Blog"',
+  name: 'CastError',
+  messageFormat: undefined,
+  stringValue: '"123"',
+  kind: undefined,
+  value: '123',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+      at new ObjectID (/Users/lyne/node-course/express-demo/node_modules/bson/lib/bson/objectid.js:59:11)
+      at castObjectId (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schema/objectid.js:267:12)
+      at ObjectId.SchemaType.applySetters (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1010:12)
+      at ObjectId.SchemaType._castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1424:15)
+      at ObjectId.SchemaType.castForQuery (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1414:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/schematype.js:1393:15)
+      at cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/cast.js:315:32)
+      at model.Query.Query.cast (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4716:12)
+      at model.Query.Query._castConditions (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:1862:10)
+      at model.Query.<anonymous> (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:2119:8)
+      at model.Query._wrappedThunk [as _findOne] (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+      at /Users/lyne/node-course/express-demo/node_modules/kareem/index.js:369:33
+      at processTicksAndRejections (internal/process/task_queues.js:79:11),
+  level: 'error',
+  stack: 'CastError: Cast to ObjectId failed for value "123" at path "_id" for model "Blog"\n' +
+    '    at new CastError (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/error/cast.js:29:11)\n' +
+    '    at model.Query.exec (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4340:21)\n' +
+    '    at model.Query.Query.then (/Users/lyne/node-course/express-demo/node_modules/mongoose/lib/query.js:4432:15)',
+  timestamp: '2020-04-27T13:19:29.865Z'
+}

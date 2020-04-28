@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const Joi = require('joi');
 const router = express.Router();
 const {User} = require('../models/user');
+const limiter = require("../middleware/limit");
 
 function validate(user) {
     const schema = {
@@ -14,7 +15,7 @@ function validate(user) {
     return result;
 }
 
-router.post('/', async (req, res) => {
+router.post('/', limiter, async (req, res) => {
     const {error} = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
